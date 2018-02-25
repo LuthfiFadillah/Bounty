@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Bounty</string>
+    <string name="default_web_cliend_id">300830567303-1i5fo70r8rc8499b4uih06t3uqp1no7o.apps.googleusercontent.com</string>
+    <string name="statusTextView">Hello World!</string>
+    <string name="createJobButton">Create Job</string>
+    <string name="findJobButton">Find Job</string>
+    <string name="profileButton">My Profile</string>
+    <string name="optionsButton">Options</string>
+    <string name="signOutButton">Sign Out</string>
+    <string name="backButton">Back</string>
+    <string name="jobTitleEditTextHint">Judul Pekerjaan</string>
+    <string name="priceEditTextHint">Harga Upah</string>
+    <string name="descriptionEditTextHint">Deskripsi pekerjaan</string>
+    <string name="submitButton">Submit Button</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_main">Main</string>
+    <string name="open_map">Open Map</string>
+    <string name="lokasi_awal">Lokasi Awal</string>
+    <string name="lokasi_tujuan">Lokasi Tujuan</string>
+
+    <!--    Permissions    -->
+    <string name="permission_rationale_location">Access to the location service is required to demonstrate the \'my location\' feature, which shows your current location on the map.</string>
+    <string name="location_permission_denied">This sample requires location permission to enable the \'my location\' layer. Please try again and grant access to use the location.\nIf the permission has been permanently denied, it can be enabled from the System Settings &gt; Apps &gt; \'Google Maps API Demos\'.</string>
+    <string name="permission_required_toast">Location permission is required for this demo.</string>
+
+    <string name="google_maps_key">AIzaSyBU4RqcaF7_4kXJbLa8b0xJYUGywOr1yUs</string>
+</resources>

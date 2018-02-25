@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.example.android.bounty.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:id="@+id/mainLayout">
+        <TextView
+            android:id="@+id/statusTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/statusTextView"
+            />
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/sign_in_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/jobButtonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+            <View android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_weight="10" />
+            <Button
+                android:id="@+id/createJobButton"
+                android:layout_width="0dp"
+                android:layout_weight="40"
+                android:layout_height="wrap_content"
+                android:text="@string/createJobButton"
+                />
+            <Button
+                android:id="@+id/findJobButton"
+                android:layout_width="0dp"
+                android:layout_weight="40"
+                android:layout_height="wrap_content"
+                android:text="@string/findJobButton"
+                />
+            <View android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_weight="10" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/profileButtonLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_weight="10" />
+            <Button
+                android:id="@+id/profileButton"
+                android:layout_width="0dp"
+                android:layout_weight="80"
+                android:layout_height="wrap_content"
+                android:text="@string/profileButton"
+                />
+            <View android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_weight="10" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/optionsButtonLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_weight="10" />
+            <Button
+                android:id="@+id/optionsButton"
+                android:layout_width="0dp"
+                android:layout_weight="80"
+                android:layout_height="wrap_content"
+                android:text="@string/optionsButton"
+                />
+            <View android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_weight="10" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:id="@+id/mainLayout2"
+        android:visibility="gone"
+        >
+        <LinearLayout
+            android:id="@+id/signOutButtonLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_weight="10" />
+            <Button
+                android:id="@+id/signOutButton"
+                android:layout_width="0dp"
+                android:layout_weight="80"
+                android:layout_height="wrap_content"
+                android:text="@string/signOutButton"
+                />
+            <View android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_weight="10" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/backButtonLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_weight="10" />
+            <Button
+                android:id="@+id/backButton"
+                android:layout_width="0dp"
+                android:layout_weight="80"
+                android:layout_height="wrap_content"
+                android:text="@string/backButton"
+                />
+            <View android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_weight="10" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:id="@+id/mainLayout3"
+        android:visibility="gone"
+        >
+        <LinearLayout
+            android:id="@+id/jobTitleEditTextLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_weight="15" />
+
+            <EditText
+                android:id="@+id/jobTitleEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="70"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="@string/jobTitleEditTextHint"
+                android:text="" />
+
+
+            <View android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_weight="15" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/priceEditTextLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_weight="15" />
+
+            <EditText
+                android:id="@+id/priceEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="70"
+                android:ems="10"
+                android:inputType="number"
+                android:hint="@string/priceEditTextHint"
+                android:text="" />
+
+
+            <View android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_weight="15" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/descriptionEditTextLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_weight="15" />
+
+            <EditText
+                android:id="@+id/descriptionEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="70"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="@string/descriptionEditTextHint"
+                android:text="" />
+
+
+            <View android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_weight="15" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/startPointTextViewLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_weight="15" />
+
+            <TextView
+                android:id="@+id/startPointTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="40"
+                android:ems="10"
+                android:text="Start point : " />
+
+            <Button
+                android:id="@+id/buttonStartPoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:onClick="viewMapsAwal"
+                android:text="@string/open_map" />
+
+
+            <View android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_weight="15" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/endPointTextViewLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_weight="15" />
+
+            <TextView
+                android:id="@+id/endPointTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="40"
+                android:ems="10"
+                android:text="End point : " />
+
+            <Button
+                android:id="@+id/buttonEndPoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:onClick="viewMapsAkhir"
+                android:text="@string/open_map" />
+
+
+            <View android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_weight="15" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/buttonsJobLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_weight="15" />
+
+            <Button
+                android:id="@+id/backJobButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="35"
+                android:text="@string/backButton" />
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="0dp"
+                android:layout_weight="35"
+                android:layout_height="wrap_content"
+                android:text="@string/submitButton"
+                />
+            <View android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_weight="15" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/mainLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ListView
+            android:id="@+id/jobList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/backButtonFindJobLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_weight="15" />
+
+            <Button
+                android:id="@+id/backFindJobButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="70"
+                android:text="@string/backButton" />
+            <View android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_weight="15" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+
